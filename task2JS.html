@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+    <script>
+        /*1*/
+        var num = Number(prompt('enter first num:'));
+        if(num>928 || num<532){
+            alert(num);
+        }
+    /*-----------------------------------*/
+        /*2*/
+        var num1 = Number(prompt('enter first number:'));
+        var num2 = Number(prompt('enter second number:'));
+        var num3 = Number(prompt('enter third number:'));
+        if(num2 > num1 || num3 > num2 ){
+            alert('Increasing');
+        }
+    /*-----------------------------------*/
+        /*3*/
+        var numO = Number(prompt('enter first number:'));
+        var numS = Number(prompt('enter second number:'));
+        if(numS > numO){
+           alert('Growing');
+        }
+    /*-----------------------------------*/
+        /*4*/
+        var num10 = Number(prompt('enter first number:'));
+        if( num10%2==0){
+            alert('Even');
+        }else
+        alert('Odd');
+    /*-----------------------------------*/
+        /*5*/
+        var numD = Number(prompt('enter first number:'));
+        var numG = Number(prompt('enter second number:'));
+        if(numD < numG){
+            alert(numD,numG);
+        }
+        else if(numG<numD){
+            alert(numG<numD);
+        }
+
+    /*-----------------------------------*/
+        /*6*/
+        var nu = Number(prompt('enter a number :'));
+        switch(true){
+            case (nu>0): alert('the number is positive ');
+            break
+            case (nu<0): alert('the number is negative');
+            break
+            case (nu == 0): alert('the number is 0 ');
+            break
+        }
+    </script>
+
+
+
+</body>
+</html>
