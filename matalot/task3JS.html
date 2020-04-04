@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //A. Array:
+        //Q1
+        var arr = []; //Create an Array
+        for (var i = 0; i < 6; i++) {
+            arr.push(Number(prompt('Enter a Num ' + (i+1)))); // push the value into the array
+        }
+        //----------------------------------------------
+        //Q2
+        //i do two way to print the Array
+        //first way to print
+        console.table(arr);
+        //second way
+        console.log('Full array: ' + arr.join(', ')); 
+        //----------------------------------------------
+        //Q3
+        //two var max,min that are at the same place
+        var max = arr[0]
+        var min = arr[0]
+        //run all over the array to see which val is max and min
+        for(var j = 0 ; j < arr.length; j++) {
+        //check which val is max and see which is min
+        if(arr[j] > max){
+            max = arr[j];
+        }else if (arr[j] < min){
+            min = arr[j];
+            }
+        }
+        //print max and min val
+        console.log(`max is : ${max}`);
+        console.log(`min is : ${min}`);
+        //----------------------------------------------
+        //Q4
+        var sum = 0;
+        for(var val of arr){
+            sum += val
+        }
+        console.log("the sum is " + sum);
+        //----------------------------------------------
+        //Q5
+        //Create two Array odd and even
+        var even =[];
+        var odd = [];
+        //run the array and check if the item is even or odd
+        for(var item of arr){
+        //the check
+        if(item%2==0){
+            even.push(item);
+        //else if this odd
+        }else{
+            odd.push(item);
+        }
+        }
+        //print the even array and the odd array
+        console.log('Full even array : ' + even.join(', ')); 
+        console.log('Full odd array : ' + odd.join(', '));
+        //----------------------------------------------
+        //Q6
+        
+       
+        var maxSec = arr[0];
+        //run all over the array to see which val is max and min
+        for(var k = 0 ; k < arr.length; k++) {
+        //check which val is max and which is second max
+        if (arr[k] > min && arr[k] < max) {
+            maxSec = arr[k];
+        }
+        }
+        console.log(`${maxSec} is the second max value after ${max}`);        
+        //----------------------------------------------
+        //B. Matrix:
+        //Q7
+        //create the 4 rows and 2 col matrix and insert values
+        var Matrix = [
+        [true,true],
+        [true,false],
+        [false,true],
+        [false,false]
+        ];
+        console.log(Matrix);
+        console.log("1 = true,0=false");
+        //print in the console all the posibilities of the Matrix
+        console.log("----AND Logic gates----");
+        console.log(`true AND true = ${Matrix[0][0] && + Matrix[0][1]}` + " true");
+        console.log(`true AND false = ${Matrix[1][0] && + Matrix[1][1]}` + " false");
+        console.log(`false AND true = ${Matrix[2][0] && + Matrix[2][1]}`);
+        console.log(`false AND false = ${Matrix[3][0] && + Matrix[3][1]}`);
+
+        console.log("----OR Logic gates----");
+        console.log(`true OR true = ${Matrix[0][0] || + Matrix[0][1]}`);
+        console.log(`true OR false = ${Matrix[1][0] || + Matrix[1][1]}`);  
+        console.log(`false OR true = ${Matrix[2][0] || + Matrix[2][1]}` + " true");
+        console.log(`false OR false = ${Matrix[3][0] || + Matrix[3][1]}` + " false");
+
+        console.log("----XOR Logic gates----");
+        console.log(`true XOR true = ${Matrix[0][0] ^ + Matrix[0][1]}` + " false");
+        console.log(`true XOR false = ${Matrix[1][0] ^ + Matrix[1][1]}` + " true");
+        console.log(`false XOR true = ${Matrix[2][0] ^ + Matrix[2][1]}` + " true");
+        console.log(`false XOR false = ${Matrix[3][0] ^ + Matrix[3][1]}` + " false");
+    </script>
+    
+</body>
+</html>
