@@ -8,7 +8,7 @@
 <body>
     <script>
         //Q.1
-        var x = 32243
+        var x = Number(prompt(`enter the number you want to reverse : `))
         //creat the func
         function revers_num(x){
             x = x + '';
@@ -21,7 +21,7 @@
         //--------------------------------------------------------------
         //Q.2
         //prompt a num.
-         var num = Number(prompt('enter a number :'));
+         var num = Number(prompt('enter a number to check if it is prime or not :'));
          //create the func
         function check_If_Prime(num){
             for(var i = 2; i<num; i++){
@@ -55,46 +55,46 @@
         var money = Number(prompt(`how much money do you want to change : `))  
         
         //the court of all currency
-        var  dolarToShekel = 3.59;
-        var shekelTodollar = 0.28;
-        var euroToshekel = 3.91;
-        var shekelToeuro = 0.26;
+        var  dolar_shekel = 3.59;
+        var shekel_dollar = 0.28;
+        var euro_shekel = 3.91;
+        var shekel_euro = 0.26;
 
         //all the function for the convert
-        function DolarToShekel(money){
+        function dolarsToShekel(money){
             //result is the multiply of 
-            var result1 = dolarToShekel*money;
+            var result1 = dolar_shekel*money;
             return result1;
         }
 
         function shekelToDollar(money){
             //result is the multiply of 
-            var result2 =  shekelTodollar*money ;
+            var result2 =  shekel_dollar*money ;
             return result2;
         }
 
         function euroToShekel(money){
             //result is the multiply of 
-            var result3 = euroToshekel*money;
+            var result3 = euro_shekel*money;
             return result3;
         }
 
         function shekelToEuro(number){ 
             //result is the multiply of 
-            var result4 = shekelTodollar*money;
+            var result4 = shekel_euro*money;
             return result4;
         }
         //create a var for each function
-        var fun1 = DolarToShekel(money); 
+        var fun1 = dolarsToShekel(money); 
         var fun2 = shekelToDollar(money);
         var fun3 = euroToShekel(money);
         var fun4 = shekelToEuro(money);
         
         //print the money and the money after convert
-        console.log(`for ${money} dolar you have ${fun1.toFixed(3)} shekel`);
-        console.log(`for ${money} shekel you have ${fun2.toFixed(3)} dollar`);
-        console.log(`for ${money} euro you have ${fun3.toFixed(3)} shekel`);
-        console.log(`for ${money} shekel you have ${fun4.toFixed(3)} euro`);
+        console.log(`for ${money} dolar you have ${fun1.toFixed(3)} Shekels`);
+        console.log(`for ${money} shekel you have ${fun2.toFixed(3)} Dollars`);
+        console.log(`for ${money} euro you have ${fun3.toFixed(3)} Shekel`);
+        console.log(`for ${money} shekel you have ${fun4.toFixed(3)} Euros`);
         //--------------------------------------------------------------
    
     </script>
