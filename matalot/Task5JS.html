@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 5</title>
+</head>
+<body>
+
+    <script>
+        //Q.1
+       /* var sec = Number(prompt("Enter number od delay sec you want : "));
+        var num2 = Number(prompt("Enter num2"));
+
+        var counter = 0;
+
+        for(var i=0; i < num2; i++){
+            setTimeout(
+                function(){
+                    console.log(Math.floor(Math.random() * Math.floor(11)));
+                }
+                ,sec*1000*i)
+        };*/
+        //--------------------------------------------------------------
+        //Q.2
+        var ms = 4000 
+        var arr = ["Dani","Yoad","Shahar"];
+        setTimeout(
+            function(){
+                arr.forEach(element => console.log(element));
+            }
+            ,ms*1000*1)
+        //--------------------------------------------------------------
+        //Q.3
+        /*
+        var num = Number(prompt('enter a number :'));
+        function getSqrt(num){
+            return Math.sqrt(num);
+        }
+        var func = getSqrt(num);
+        alert(`the sqrt is ${func}`);
+        */
+        //--------------------------------------------------------------
+        //Q.4
+        
+        function getPow(){
+            var num1 = Number(prompt("enter num1 :"));
+            var num2 = Number(prompt("enter num2 :"));
+            return Math.pow(num1, num2);
+        }
+        alert(`the pow is: ${getPow()}`);
+        //--------------------------------------------------------------
+        //Q.5
+        
+        //--------------------------------------------------------------
+        
+        
+    </script>
+    
+</body>
+</html>
