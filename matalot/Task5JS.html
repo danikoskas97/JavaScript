@@ -11,9 +11,8 @@
         //Q.1
        /* var sec = Number(prompt("Enter number od delay sec you want : "));
         var num2 = Number(prompt("Enter num2"));
-
         var counter = 0;
-
+        
         for(var i=0; i < num2; i++){
             setTimeout(
                 function(){
@@ -23,13 +22,19 @@
         };*/
         //--------------------------------------------------------------
         //Q.2
-        var ms = 4000 
+        var ms = 4000;
         var arr = ["Dani","Yoad","Shahar"];
-        setTimeout(
-            function(){
-                arr.forEach(element => console.log(element));
+        function print(arr){
+            var counter = 0;
+            for(var i = 0; i < arr.length; i++){
+                setTimeout(
+                    function(){
+                    console.log(arr[counter++]);
+                },ms*i
+                )
             }
-            ,ms*1000*1)
+        }
+        print(arr);
         //--------------------------------------------------------------
         //Q.3
         /*
@@ -42,20 +47,26 @@
         */
         //--------------------------------------------------------------
         //Q.4
-        
-        function getPow(){
+        /*function getPow(){
             var num1 = Number(prompt("enter num1 :"));
             var num2 = Number(prompt("enter num2 :"));
             return Math.pow(num1, num2);
         }
-        alert(`the pow is: ${getPow()}`);
+        alert(`the pow is: ${getPow()}`);*/
         //--------------------------------------------------------------
         //Q.5
-        
+        /*
+        function exe5(){
+        var song = prompt("enter the name of the song: ");
+        var lyrics = prompt("paste the lyrics :");
+        console.log(` num of words ${lyrics.length}`);
+        var find = lyrics.indexOf(song.toLowerCase());
+        return find;
+        }
+        console.log(exe5());*/
         //--------------------------------------------------------------
         
         
     </script>
-    
 </body>
 </html>
